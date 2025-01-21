@@ -25,7 +25,7 @@ def search():
       # verification du nom de l'auteur
       if livre['author'] == autorFromSearch:
          exist = True
-         return f'Livre : {livre['title']} ( {livre['year']})'
+         return f'Livre : {livre["title"]}, Auteur : {livre["author"]}, Année : {livre["year"]}'
 
    if exist == False:
        return "Aucun livre trouvé!"
